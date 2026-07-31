@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vilensahakyan4-tech.github.io/crusty-and-more/sitemap.xml
