@@ -1038,13 +1038,44 @@ function setLanguage(next){
   document.querySelectorAll("[data-nav]").forEach((el,i)=>el.textContent=w.nav[i]);
   renderMenu();
 }
+function cardMarkup(p){
+  const name=p.names[lang]||p.names.en;
+  const description=p.descriptions[lang]||p.descriptions.en||"";
+  return '<article class="card reveal"><div class="card-image"><img loading="lazy" src="'+asset(p.image)+'" alt="'+name.replaceAll('"','&quot;')+'"></div><div class="card-body"><h4>'+name+'</h4><p>'+description+'</p><strong>'+money(p.price)+'</strong></div></article>';
+}
 function renderMenu(){
   const nav=document.getElementById("categoryNav");
-  nav.innerHTML=ORDER.map(c=>{const count=products.filter(p=>p.category===c).length;return count?'<a href="#'+slug(c)+'">'+CATEGORIES[c][lang]+' <span>'+count+'</span></a>':""}).join("");
+  nav.innerHTML=ORDER.map(c=>{const count=products.filter(p=>p.category===c).length;return count?'<button type="button" data-open-category="'+c+'">'+CATEGORIES[c][lang]+' <span>'+count+'</span></button>':""}).join("");
   document.getElementById("menuRoot").innerHTML=ORDER.map(c=>{
     const items=products.filter(p=>p.category===c);if(!items.length)return "";
-    return '<section class="menu-category" id="'+slug(c)+'"><div class="category-heading"><h3>'+CATEGORIES[c][lang]+'</h3><span>'+items.length+'</span></div><div class="menu-grid">'+items.map(p=>'<article class="card"><div class="card-image"><img loading="lazy" src="'+asset(p.image)+'" alt="'+p.names[lang].replaceAll('"','&quot;')+'"></div><div class="card-body"><h4>'+p.names[lang]+'</h4><p>'+p.descriptions[lang]+'</p><strong>'+money(p.price)+'</strong></div></article>').join("")+'</div></section>';
+    return '<section class="menu-category reveal" id="'+slug(c)+'"><div class="category-heading"><h3>'+CATEGORIES[c][lang]+'</h3><span>'+items.length+'</span><button class="category-open" type="button" data-open-category="'+c+'">↗</button></div><div class="menu-grid">'+items.map(cardMarkup).join("")+'</div></section>';
   }).join("");
+  setupReveals();
+  const modal=document.getElementById("menuModal");
+  if(modal.classList.contains("is-open")&&modal.dataset.category)fillCategoryModal(modal.dataset.category);
+}
+function fillCategoryModal(category){
+  const items=products.filter(p=>p.category===category);
+  document.getElementById("modalTitle").textContent=CATEGORIES[category][lang];
+  document.getElementById("modalGrid").innerHTML=items.map(cardMarkup).join("");
+}
+function openCategoryModal(category){
+  const modal=document.getElementById("menuModal");
+  modal.dataset.category=category;fillCategoryModal(category);
+  modal.classList.add("is-open");modal.setAttribute("aria-hidden","false");
+  document.body.classList.add("modal-open");
+  setTimeout(()=>modal.querySelector(".menu-modal-close").focus(),120);
+}
+function closeCategoryModal(){
+  const modal=document.getElementById("menuModal");
+  modal.classList.remove("is-open");modal.setAttribute("aria-hidden","true");
+  document.body.classList.remove("modal-open");
+}
+let revealObserver;
+function setupReveals(){
+  if(!("IntersectionObserver" in window)){document.querySelectorAll(".reveal").forEach(el=>el.classList.add("is-visible"));return}
+  if(!revealObserver)revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");revealObserver.unobserve(entry.target)}}),{threshold:.08,rootMargin:"0px 0px -30px"});
+  document.querySelectorAll(".reveal:not(.is-visible)").forEach(el=>revealObserver.observe(el));
 }
 async function loadAdminContent(){
   try{
@@ -1060,5 +1091,12 @@ async function loadAdminContent(){
   }catch(_){}
 }
 document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLanguage(b.dataset.lang)));
-setLanguage(lang);loadAdminContent();
+document.addEventListener("click",event=>{
+  const opener=event.target.closest("[data-open-category]");
+  if(opener){event.preventDefault();openCategoryModal(opener.dataset.openCategory);return}
+  if(event.target.closest("[data-modal-close]"))closeCategoryModal();
+});
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeCategoryModal()});
+window.addEventListener("load",()=>setTimeout(()=>{document.body.classList.add("site-ready");document.getElementById("siteLoader")?.classList.add("is-hidden")},450));
+setLanguage(lang);loadAdminContent();setupReveals();
 
