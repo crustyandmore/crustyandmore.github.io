@@ -18,6 +18,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Crusty Sandwiches & More","alternateName":["Crusty And More","Красти энд мор","Красти Ереван","Քրաստի"],"url":"https://crustyandmore.github.io/","telephone":"+37433206006","priceRange":"֏֏","servesCuisine":["Sandwiches","Fast Food","Salads"],"address":{"@type":"PostalAddress","streetAddress":"5 Mesrop Mashtots Ave","addressLocality":"Yerevan","postalCode":"0002","addressCountry":"AM"},"openingHours":"Mo-Su 10:00-22:00","sameAs":["https://www.instagram.com/crustyandmore/","https://www.facebook.com/p/CrustyandMore-61552755571949/","https://www.tiktok.com/@crustyandmore"]}</script>
 </head>
 <body>
+  <div class="site-loader" id="siteLoader" aria-hidden="true"><div class="loader-mark"><img src="https://crusty-and-more.vilensahakyan4.chatgpt.site/logo.jpg" alt=""><span></span><p>TASTY • TOASTY • CRUSTY</p></div></div>
   <header>
     <a class="brand" href="#home"><img id="logo" src="https://crusty-and-more.vilensahakyan4.chatgpt.site/logo.jpg" alt="Crusty And More"></a>
     <nav><a href="#home" data-nav="home">Գլխավոր</a><a href="#menu" data-nav="menu">Մենյու</a><a href="#about" data-nav="about">Մեր մասին</a><a href="#contact" data-nav="contact">Կապ</a></nav>
@@ -31,6 +32,13 @@
     <section class="contact" id="contact"><div><p class="eyebrow">PROSPECT FOOD COURT</p><h2>Crusty And More</h2><p data-text="address">Մաշտոցի պողոտա 5, Երևան 0002</p><p data-text="hours">Ամեն օր՝ 10:00–22:00</p><a href="tel:+37433206006">☎ 033 206006</a></div><a class="map" href="https://www.google.com/maps/search/?api=1&query=5+Mesrop+Mashtots+Ave+Yerevan" target="_blank" data-text="map">Բացել քարտեզը ↗</a></section>
   </main>
   <footer><img src="https://crusty-and-more.vilensahakyan4.chatgpt.site/logo.jpg" alt="Crusty And More"><strong>Tasty, Toasty, Crusty</strong><div class="social-links"><a href="https://www.instagram.com/crustyandmore/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/p/CrustyandMore-61552755571949/" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.tiktok.com/@crustyandmore" target="_blank" rel="noopener noreferrer">TikTok ↗</a></div></footer>
+  <div class="menu-modal" id="menuModal" aria-hidden="true">
+    <button class="menu-modal-backdrop" type="button" data-modal-close aria-label="Close menu"></button>
+    <section class="menu-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="menu-modal-head"><div><p class="eyebrow">CRUSTY MENU</p><h2 id="modalTitle"></h2></div><button class="menu-modal-close" type="button" data-modal-close aria-label="Close">×</button></div>
+      <div class="menu-modal-grid" id="modalGrid"></div>
+    </section>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
