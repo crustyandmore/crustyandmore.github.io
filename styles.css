@@ -1176,4 +1176,74 @@ body.site-ready header,body.site-ready main,body.site-ready footer{animation:sit
   .menu-modal-grid .card-image{height:100%;min-height:140px;aspect-ratio:auto}
   .menu-modal-grid .card-body{padding:15px}
 }
+
+/* CRUSTY LAB — animated sandwich and build-your-own game */
+.sandwich-lab{padding:clamp(74px,9vw,140px) clamp(22px,6vw,110px);background:radial-gradient(circle at 12% 15%,rgba(255,201,0,.2),transparent 25%),linear-gradient(135deg,#0d2e20 0%,#123e2a 52%,#082219 100%);color:#fff;overflow:hidden;position:relative}
+.sandwich-lab:before,.sandwich-lab:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}
+.sandwich-lab:before{width:420px;height:420px;right:-190px;top:-170px;border:1px solid rgba(255,255,255,.12);box-shadow:0 0 0 70px rgba(255,255,255,.025),0 0 0 140px rgba(255,201,0,.025)}
+.sandwich-lab:after{width:160px;height:160px;left:-80px;bottom:20px;background:var(--y);opacity:.12}
+.lab-heading{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end;max-width:1400px;margin:0 auto 46px}
+.lab-heading h2{font-size:clamp(42px,6vw,88px);line-height:.93;letter-spacing:-.055em;margin:10px 0 0;max-width:850px}
+.lab-heading>p{font-size:clamp(16px,1.5vw,21px);line-height:1.55;color:rgba(255,255,255,.72);max-width:540px}
+.lab-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:22px;max-width:1400px;margin:auto}
+.assembly-card,.builder-card{border:1px solid rgba(255,255,255,.13);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.045));box-shadow:0 30px 70px rgba(0,0,0,.22);backdrop-filter:blur(12px);overflow:hidden;position:relative}
+.lab-card-title{display:flex;align-items:flex-start;gap:14px;padding:27px 29px 0;position:relative;z-index:2}
+.lab-card-title>span{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--y);color:#102f21;font-size:12px;font-weight:900;box-shadow:0 8px 25px rgba(255,201,0,.25)}
+.lab-card-title h3{font-size:clamp(24px,2.5vw,38px);line-height:1;margin:4px 0 0;letter-spacing:-.035em}
+.lab-card-title p{color:rgba(255,255,255,.62);margin:8px 0 0;line-height:1.35}
+.assembly-stage{height:430px;position:relative;margin:0 24px;perspective:900px}
+.ingredient-layer{position:absolute;left:50%;top:114px;transform:translate(-50%,var(--rest-y));transform-origin:center;filter:drop-shadow(0 16px 12px rgba(0,0,0,.28));animation:crustyAssembly 6.4s cubic-bezier(.76,0,.24,1) infinite}
+.ingredient-layer.bread-top,.stack-layer.bread-top{width:73%;height:72px;border-radius:58% 58% 24% 24%/90% 90% 22% 22%;background:radial-gradient(ellipse at 35% 28%,#f7d998 0 2%,transparent 3%),radial-gradient(ellipse at 63% 18%,#f8dfa4 0 1.8%,transparent 2.8%),linear-gradient(#d99038 0%,#f0b85b 42%,#b86725 100%);border-bottom:6px solid #874219}
+.ingredient-layer.bread-bottom,.stack-layer.bread-bottom{width:72%;height:47px;border-radius:18px 18px 44% 44%/30% 30% 70% 70%;background:linear-gradient(#e8aa50,#c97529 68%,#8e451d);border-top:5px solid #f5d080}
+.ingredient-layer.lettuce,.stack-layer.lettuce{width:78%;height:26px;background:#65b849;clip-path:polygon(0 42%,8% 10%,17% 48%,27% 6%,38% 50%,49% 8%,60% 48%,72% 9%,84% 48%,94% 12%,100% 50%,93% 92%,82% 62%,71% 95%,58% 60%,46% 93%,34% 62%,21% 94%,10% 62%)}
+.ingredient-layer.chicken,.stack-layer.chicken,.ingredient-layer.beef,.stack-layer.beef,.ingredient-layer.bacon,.stack-layer.bacon{width:69%;height:38px;border-radius:46% 42% 35% 48%;background:repeating-linear-gradient(104deg,transparent 0 26px,rgba(80,32,12,.3) 27px 30px),linear-gradient(#d89556,#a95629);border:3px solid #7e3c1f}
+.ingredient-layer.beef,.stack-layer.beef{background:repeating-linear-gradient(100deg,transparent 0 30px,rgba(25,8,4,.35) 31px 34px),linear-gradient(#824126,#4e2117);border-color:#36130d}
+.ingredient-layer.bacon,.stack-layer.bacon{height:24px;border-radius:45%;background:repeating-linear-gradient(10deg,#a93628 0 12px,#f19b79 13px 22px,#f5d3b6 23px 28px);border-color:#7e201b}
+.ingredient-layer.cheese,.stack-layer.cheese{width:73%;height:25px;background:#ffc928;clip-path:polygon(2% 0,98% 0,93% 65%,84% 48%,75% 92%,64% 55%,52% 95%,40% 54%,28% 90%,17% 52%,7% 76%)}
+.ingredient-layer.tomato,.stack-layer.tomato{width:68%;height:24px;border-radius:50%;background:linear-gradient(#ef5946,#bd251f);border:3px solid #ff7e69;box-shadow:inset 0 0 0 5px rgba(255,255,255,.12)}
+.ingredient-layer.onion,.stack-layer.onion{width:61%;height:20px;border-radius:50%;border:6px double #c58ad1;background:rgba(255,255,255,.3)}
+.ingredient-layer.sauce,.stack-layer.sauce{width:65%;height:14px;border-radius:50%;background:repeating-linear-gradient(90deg,#f7eee0 0 24px,#e7bb65 25px 32px);filter:drop-shadow(0 5px 4px rgba(0,0,0,.18))}
+@keyframes crustyAssembly{0%,14%,86%,100%{transform:translate(-50%,var(--rest-y)) rotate(0);opacity:1}40%,58%{transform:translate(-50%,var(--explode-y)) rotate(var(--tilt));opacity:1}72%{transform:translate(-50%,var(--rest-y)) rotate(0)}}
+.assembly-spark{position:absolute;color:var(--y);font-size:28px;animation:sparkle 2.2s ease-in-out infinite}
+.spark-one{left:12%;top:38%}.spark-two{right:11%;top:62%;animation-delay:.8s}
+@keyframes sparkle{0%,100%{transform:scale(.35) rotate(0);opacity:.15}50%{transform:scale(1.2) rotate(180deg);opacity:1}}
+.assembly-caption{text-align:center;text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:900;color:rgba(255,255,255,.55);margin:-7px 20px 28px}
+.builder-card{padding-bottom:24px}
+.game-worktop{height:300px;position:relative;margin:8px 24px 0;display:flex;align-items:flex-end;justify-content:center}
+.game-worktop:before{content:"";position:absolute;inset:15px 3% 16px;border-radius:25px;background:radial-gradient(circle at 50% 78%,rgba(255,201,0,.16),transparent 34%),linear-gradient(145deg,rgba(0,0,0,.14),rgba(255,255,255,.03))}
+.plate{position:absolute;bottom:20px;width:76%;height:43px;border-radius:50%;background:linear-gradient(#f9f6e9,#b9c7bd);box-shadow:0 16px 24px rgba(0,0,0,.32),inset 0 0 0 9px rgba(255,255,255,.6)}
+.game-stack{width:min(330px,75%);height:245px;position:absolute;bottom:42px;display:flex;flex-direction:column-reverse;align-items:center;justify-content:flex-start;z-index:2;filter:drop-shadow(0 16px 13px rgba(0,0,0,.2))}
+.stack-layer{position:relative;flex:0 0 auto;margin-top:-5px;min-height:13px;animation:stackDrop .48s cubic-bezier(.2,1.35,.42,1) both}
+.stack-layer.bread-bottom{height:39px;margin-top:0}.stack-layer.bread-top{height:58px;margin-bottom:-3px}
+.stack-layer.lettuce{height:22px}.stack-layer.chicken,.stack-layer.beef{height:33px}.stack-layer.tomato{height:21px}.stack-layer.onion{height:18px}.stack-layer.cheese{height:23px}
+@keyframes stackDrop{from{transform:translateY(-90px) rotate(-7deg);opacity:0}to{transform:translateY(0) rotate(0);opacity:1}}
+.ingredient-tray{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;padding:4px 24px 20px}
+.ingredient-choice{border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.13);color:#fff;border-radius:15px;padding:11px 9px;display:grid;grid-template-columns:28px 1fr 17px;align-items:center;gap:7px;text-align:left;cursor:pointer;transition:.25s ease;font:inherit}
+.ingredient-choice:hover{background:rgba(255,255,255,.13);border-color:rgba(255,201,0,.55);transform:translateY(-3px)}
+.ingredient-choice:active{transform:scale(.96)}
+.ingredient-choice b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ingredient-choice small{font-size:19px;color:var(--y);font-weight:900}
+.ingredient-swatch{width:27px;height:20px;display:block;position:relative;filter:drop-shadow(0 4px 3px rgba(0,0,0,.2))}
+.ingredient-swatch.lettuce{background:#65b849;clip-path:polygon(0 50%,15% 10%,30% 55%,48% 5%,65% 55%,82% 10%,100% 50%,80% 90%,60% 50%,40% 92%,20% 52%)}
+.ingredient-swatch.tomato{border-radius:50%;background:#e64335;border:2px solid #ff7e69}
+.ingredient-swatch.cheese{background:#ffc928;clip-path:polygon(0 0,100% 0,86% 100%,67% 58%,46% 100%,26% 58%,8% 88%)}
+.ingredient-swatch.chicken{border-radius:50%;background:#c8763e;border:2px solid #82401f}
+.ingredient-swatch.beef{border-radius:50%;background:#64301f;border:2px solid #39150e}
+.ingredient-swatch.bacon{border-radius:8px;background:repeating-linear-gradient(0deg,#a93628 0 5px,#f19b79 6px 9px)}
+.ingredient-swatch.onion{border-radius:50%;border:4px double #c58ad1}
+.ingredient-swatch.sauce{border-radius:50%;background:#f4e3bf}
+.game-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 24px}
+.game-footer>strong{color:var(--y);font-size:14px}
+.game-footer>div{display:flex;gap:8px}
+.game-reset,.game-finish{border:0;border-radius:999px;padding:12px 17px;font:800 12px/1 inherit;cursor:pointer;transition:.25s ease}
+.game-reset{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.15)}
+.game-finish{background:var(--y);color:#123624;box-shadow:0 8px 22px rgba(255,201,0,.2)}
+.game-reset:hover,.game-finish:hover{transform:translateY(-2px)}.game-finish:disabled{opacity:.45;cursor:default;transform:none}
+.game-pop{position:absolute;z-index:5;top:40%;left:50%;transform:translate(-50%,-50%) scale(.2) rotate(-8deg);background:var(--y);color:#133725;font-size:clamp(25px,4vw,48px);font-weight:1000;letter-spacing:-.04em;padding:12px 22px;border-radius:15px;opacity:0;pointer-events:none;box-shadow:0 18px 40px rgba(0,0,0,.3)}
+.game-pop.show{animation:crustyPop 1.25s cubic-bezier(.2,1.6,.4,1)}
+@keyframes crustyPop{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(-8deg)}25%,70%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(2deg)}100%{opacity:0;transform:translate(-50%,-75%) scale(1.15) rotate(0)}}
+.builder-card.celebrate{animation:cardCelebrate .75s ease}
+@keyframes cardCelebrate{35%{box-shadow:0 0 0 3px var(--y),0 35px 90px rgba(255,201,0,.28)}}
+@media(max-width:980px){.lab-heading{grid-template-columns:1fr}.lab-grid{grid-template-columns:1fr}.assembly-stage{height:390px}.ingredient-layer{top:85px}.builder-card{min-height:650px}}
+@media(max-width:620px){.sandwich-lab{padding:65px 14px}.lab-heading{padding:0 8px;margin-bottom:28px}.lab-heading h2{font-size:43px}.lab-grid{gap:14px}.assembly-card,.builder-card{border-radius:24px}.lab-card-title{padding:22px 19px 0}.assembly-stage{height:360px;margin:0 8px;transform:scale(.93)}.ingredient-layer{top:73px}.ingredient-tray{grid-template-columns:repeat(2,1fr);padding:2px 16px 18px}.game-worktop{margin:6px 8px 0;height:285px}.game-footer{align-items:stretch;flex-direction:column;padding:0 16px}.game-footer>div{display:grid;grid-template-columns:1fr 1fr}.game-reset,.game-finish{padding:14px 10px}.game-stack{width:76%}}
+
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
