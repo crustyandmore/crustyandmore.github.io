@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Crusty And More">
   <meta property="og:url" content="https://crustyandmore.github.io/">
   <meta property="og:image" content="https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png">
-  <link rel="stylesheet" href="styles.css?v=20260801-3">
+  <link rel="stylesheet" href="styles.css?v=20260804-1">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -63,6 +63,35 @@
     <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow" data-text="kicker">ԹԱՐՄ • ՏԱՔ • CRUSTY</p><h1 data-text="title">Քո սենդվիչը։<br>Քո կանոններով։</h1><p data-text="intro">Թարմ բաղադրիչներ, ոսկեգույն խրթխրթան հաց և համեր, որոնց համար ուզում ես վերադառնալ։</p><div class="hero-actions"><a class="primary" href="#menu" data-text="menuButton">Դիտել մենյուն</a><a href="tel:+37433206006">033 206006</a></div><span class="hours" data-text="hours">Ամեն օր՝ 10:00–22:00</span></div><div class="hero-image"><img id="heroImage" src="https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png" alt="Crusty sandwich"><b>TASTY<br>TOASTY<br>CRUSTY</b></div></section>
     <section class="order"><div><p class="eyebrow">DELIVERY</p><h2 data-text="orderTitle">Ընտրիր առաքման եղանակը</h2><p data-text="orderText">Մենյուն դիտիր այստեղ, իսկ պատվերը կատարիր քեզ հարմար հարթակում։</p></div><div class="order-links"><a class="buy" href="https://buy.am/en/restaurants/crusty-sandwiches-and-more" target="_blank">BUY.AM <span>↗</span></a><a class="glovo" href="https://glovoapp.com/en/am/yerevan/stores/sandwiches-crusty-and-more-yrv" target="_blank">GLOVO <span>↗</span></a><a class="yandex" href="https://eda.yandex.ru/restaurant/crusty_sandwiches_and_more_wbc28" target="_blank">YANDEX <span>↗</span></a></div></section>
     <section class="menu" id="menu"><div class="section-title"><div><p class="eyebrow" data-text="menuKicker">ԱՄԲՈՂՋ ՄԵՆՅՈՒՆ</p><h2 data-text="menuTitle">Ամեն ինչ՝ մեկ տեղում։</h2></div><p data-text="menuIntro">Բոլոր սենդվիչները, կոմբոները, խորտիկները, աղցանները, սոուսները և ըմպելիքները։</p></div><div id="categoryNav" class="category-nav"></div><div id="menuRoot"></div></section>
+    <section class="sandwich-lab reveal" id="builder">
+      <div class="lab-heading"><div><p class="eyebrow" data-text="builderKicker">CRUSTY LAB</p><h2 data-text="builderTitle">Ստեղծիր քո սենդվիչը</h2></div><p data-text="builderIntro">Տես՝ ինչպես են թարմ բաղադրիչները միավորվում մեկ խրթխրթան սենդվիչի մեջ, հետո հավաքիր քոնը։</p></div>
+      <div class="lab-grid">
+        <article class="assembly-card">
+          <div class="lab-card-title"><span>01</span><h3 data-text="demoTitle">Սենդվիչի անատոմիա</h3></div>
+          <div class="assembly-stage" aria-hidden="true">
+            <div class="ingredient-layer bread-bottom" style="--rest-y:132px;--explode-y:180px;--tilt:-2deg"></div>
+            <div class="ingredient-layer lettuce" style="--rest-y:112px;--explode-y:132px;--tilt:3deg"></div>
+            <div class="ingredient-layer chicken" style="--rest-y:88px;--explode-y:78px;--tilt:-3deg"></div>
+            <div class="ingredient-layer cheese" style="--rest-y:70px;--explode-y:28px;--tilt:4deg"></div>
+            <div class="ingredient-layer tomato" style="--rest-y:51px;--explode-y:-24px;--tilt:-4deg"></div>
+            <div class="ingredient-layer onion" style="--rest-y:35px;--explode-y:-76px;--tilt:5deg"></div>
+            <div class="ingredient-layer bread-top" style="--rest-y:0px;--explode-y:-145px;--tilt:-2deg"></div>
+            <div class="assembly-spark spark-one">✦</div><div class="assembly-spark spark-two">✦</div>
+          </div>
+          <p class="assembly-caption" data-text="demoCaption">Разбирается. Собирается. Всегда Crusty.</p>
+        </article>
+        <article class="builder-card">
+          <div class="lab-card-title"><span>02</span><div><h3 data-text="gameTitle">Հավաքիր քո Crusty-ն</h3><p data-text="gameHint">Սեղմիր բաղադրիչների վրա և ստեղծիր քո տարբերակը։</p></div></div>
+          <div class="game-worktop">
+            <div class="game-stack" id="gameStack" aria-live="polite"></div>
+            <div class="plate"></div>
+            <div class="game-pop" id="gamePop" aria-hidden="true">CRUSTY!</div>
+          </div>
+          <div class="ingredient-tray" id="ingredientTray"></div>
+          <div class="game-footer"><strong id="gameStatus"></strong><div><button class="game-reset" id="gameReset" type="button" data-text="gameReset">Սկսել նորից</button><button class="game-finish" id="gameFinish" type="button" data-text="gameFinish">Պատրաստ է!</button></div></div>
+        </article>
+      </div>
+    </section>
     <section class="about" id="about"><div><p class="eyebrow" data-text="aboutKicker">ՄԵՐ ՄԱՍԻՆ</p><h2 data-text="aboutTitle">Պատրաստվում է հենց քո աչքի առաջ</h2></div><p data-text="aboutText">Crusty Sandwiches & More-ը Երևանի սրտում ստեղծված արագ ու թարմ սննդի կոնցեպտ է։ Յուրաքանչյուր պատվերը պատրաստում ենք տեղում։</p></section>
     <section class="contact" id="contact"><div><p class="eyebrow">PROSPECT FOOD COURT</p><h2>Crusty And More</h2><p data-text="address">Մաշտոցի պողոտա 5, Երևան 0002</p><p data-text="hours">Ամեն օր՝ 10:00–22:00</p><a href="tel:+37433206006">☎ 033 206006</a></div><a class="map" href="https://www.google.com/maps/search/?api=1&query=5+Mesrop+Mashtots+Ave+Yerevan" target="_blank" data-text="map">Բացել քարտեզը ↗</a></section>
   </main>
@@ -74,6 +103,6 @@
       <div class="menu-modal-grid" id="modalGrid"></div>
     </section>
   </div>
-  <script src="app.js?v=20260801-3"></script>
+  <script src="app.js?v=20260804-1"></script>
 </body>
 </html>
