@@ -1020,9 +1020,9 @@ const CATEGORIES = {
   Sauce:{hy:"Սոուսներ",ru:"Соусы",en:"Sauces"},Drinks:{hy:"Ըմպելիքներ",ru:"Напитки",en:"Drinks"}
 };
 const WORDS = {
-  hy:{nav:["Գլխավոր","Մենյու","Մեր մասին","Կապ"],kicker:"ԹԱՐՄ • ՏԱՔ • CRUSTY",title:"Քո սենդվիչը։<br>Քո կանոններով։",intro:"Թարմ բաղադրիչներ, ոսկեգույն խրթխրթան հաց և համեր, որոնց համար ուզում ես վերադառնալ։",menuButton:"Դիտել մենյուն",hours:"Ամեն օր՝ 10:00–22:00",orderTitle:"Ընտրիր առաքման եղանակը",orderText:"Մենյուն դիտիր այստեղ, իսկ պատվերը կատարիր քեզ հարմար հարթակում։",menuKicker:"ԱՄԲՈՂՋ ՄԵՆՅՈՒՆ",menuTitle:"Ամեն ինչ՝ մեկ տեղում։",menuIntro:"Բոլոր սենդվիչները, կոմբոները, խորտիկները, աղցանները, սոուսները և ըմպելիքները։",builderKicker:"CRUSTY LAB",promoTitle:"Հավաքիր քո Crusty-ն",promoText:"Ընտրիր բաղադրիչները, բարձրացրու համի մակարդակը և ստեղծիր քո սենդվիչը։",promoButton:"Խաղալ և հավաքել",scoreLabel:"ՄԻԱՎՈՐ",flavorLabel:"ՀԱՄԻ ՄԱԿԱՐԴԱԿ",gameRandom:"Անակնկալ ինձ",builderTitle:"Ստեղծիր քո սենդվիչը",builderIntro:"Տես՝ ինչպես են թարմ բաղադրիչները միավորվում մեկ խրթխրթան սենդվիչի մեջ, հետո հավաքիր քոնը։",demoTitle:"Սենդվիչի անատոմիա",demoCaption:"Քանդվում է։ Հավաքվում է։ Միշտ Crusty։",gameTitle:"Հավաքիր քո Crusty-ն",gameHint:"Սեղմիր բաղադրիչների վրա և ստեղծիր քո տարբերակը։",gameReset:"Սկսել նորից",gameFinish:"Պատրաստ է!",aboutKicker:"ՄԵՐ ՄԱՍԻՆ",aboutTitle:"Պատրաստվում է հենց քո աչքի առաջ",aboutText:"Crusty Sandwiches & More-ը Երևանի սրտում ստեղծված արագ ու թարմ սննդի կոնցեպտ է։ Յուրաքանչյուր պատվերը պատրաստում ենք տեղում։",address:"Մաշտոցի պողոտա 5, Երևան 0002",map:"Բացել քարտեզը ↗"},
-  ru:{nav:["Главная","Меню","О нас","Контакты"],kicker:"СВЕЖО • ГОРЯЧО • CRUSTY",title:"Твой сэндвич.<br>Твои правила.",intro:"Свежие ингредиенты, золотистый хрустящий хлеб и вкусы, за которыми хочется возвращаться.",menuButton:"Смотреть меню",hours:"Каждый день: 10:00–22:00",orderTitle:"Выберите способ заказа",orderText:"Смотрите всё меню здесь, а заказ оформляйте на удобной платформе.",menuKicker:"ПОЛНОЕ МЕНЮ",menuTitle:"Всё меню — прямо здесь.",menuIntro:"Все сэндвичи, комбо, закуски, салаты, соусы и напитки по разделам.",builderKicker:"CRUSTY LAB",promoTitle:"Собери свой Crusty",promoText:"Выбирай ингредиенты, повышай уровень вкуса и создай свой фирменный сэндвич.",promoButton:"Играй и собирай",scoreLabel:"СЧЁТ",flavorLabel:"УРОВЕНЬ ВКУСА",gameRandom:"Удиви меня",builderTitle:"Создай свой сэндвич",builderIntro:"Посмотри, как свежие ингредиенты превращаются в один хрустящий сэндвич, а потом собери свой.",demoTitle:"Анатомия сэндвича",demoCaption:"Разбирается. Собирается. Всегда Crusty.",gameTitle:"Собери свой Crusty",gameHint:"Нажимай на ингредиенты и создавай свой вариант.",gameReset:"Начать заново",gameFinish:"Готово!",aboutKicker:"О НАС",aboutTitle:"Готовим прямо на твоих глазах",aboutText:"Crusty Sandwiches & More — концепция быстрой и свежей еды в центре Еревана. Каждый заказ готовим на месте.",address:"проспект Месропа Маштоца, 5, Ереван 0002",map:"Открыть карту ↗"},
-  en:{nav:["Home","Menu","About","Contact"],kicker:"FRESH • TOASTY • CRUSTY",title:"Your sandwich.<br>Your rules.",intro:"Fresh ingredients, golden crusty bread and flavors worth coming back for.",menuButton:"Explore menu",hours:"Open daily: 10:00–22:00",orderTitle:"Choose how to order",orderText:"Browse the full menu here, then order on the platform you prefer.",menuKicker:"FULL MENU",menuTitle:"The whole menu. Right here.",menuIntro:"Every sandwich, combo, bite, salad, sauce and drink, organized by category.",builderKicker:"CRUSTY LAB",promoTitle:"Build your Crusty",promoText:"Choose ingredients, level up the flavor and create your signature sandwich.",promoButton:"Play and build",scoreLabel:"SCORE",flavorLabel:"FLAVOR LEVEL",gameRandom:"Surprise me",builderTitle:"Build your sandwich",builderIntro:"Watch fresh ingredients become one golden, crusty sandwich — then create your own.",demoTitle:"Sandwich anatomy",demoCaption:"Breaks apart. Comes together. Always Crusty.",gameTitle:"Build your Crusty",gameHint:"Tap ingredients and create your own combination.",gameReset:"Start over",gameFinish:"Done!",aboutKicker:"OUR STORY",aboutTitle:"Made fresh, right in front of you",aboutText:"Crusty Sandwiches & More is a fast, fresh food concept in central Yerevan. Every order is made on the spot.",address:"5 Mesrop Mashtots Ave, Yerevan 0002",map:"Get directions ↗"}
+  hy:{nav:["Գլխավոր","Մենյու","Մեր մասին","Կապ"],kicker:"ԹԱՐՄ • ՏԱՔ • CRUSTY",title:"Քո սենդվիչը։<br>Քո կանոններով։",intro:"Թարմ բաղադրիչներ, ոսկեգույն խրթխրթան հաց և համեր, որոնց համար ուզում ես վերադառնալ։",menuButton:"Դիտել մենյուն",hours:"Ամեն օր՝ 10:00–22:00",orderTitle:"Ընտրիր առաքման եղանակը",orderText:"Մենյուն դիտիր այստեղ, իսկ պատվերը կատարիր քեզ հարմար հարթակում։",menuKicker:"ԱՄԲՈՂՋ ՄԵՆՅՈՒՆ",menuTitle:"Ամեն ինչ՝ մեկ տեղում։",menuIntro:"Բոլոր սենդվիչները, կոմբոները, խորտիկները, աղցանները, սոուսները և ըմպելիքները։",builderKicker:"CRUSTY LAB",promoTitle:"Հավաքիր քո Crusty-ն",promoText:"Ընտրիր բաղադրիչները, բարձրացրու համի մակարդակը և ստեղծիր քո սենդվիչը։",promoButton:"Խաղալ և հավաքել",scoreLabel:"ՄԻԱՎՈՐ",flavorLabel:"ՀԱՄԻ ՄԱԿԱՐԴԱԿ",gameRandom:"Անակնկալ ինձ",rushTitle:"CRUSTY RUSH",rushHint:"Հիշիր պատվերը և հավաքիր բաղադրիչները ճիշտ հերթականությամբ։",orderLabel:"ՊԱՏՎԵՐ",timerLabel:"ԺԱՄԱՆԱԿ",livesLabel:"ԿՅԱՆՔԵՐ",rushStart:"ՍԿՍԵԼ ԽԱՂԸ",builderTitle:"Ստեղծիր քո սենդվիչը",builderIntro:"Տես՝ ինչպես են թարմ բաղադրիչները միավորվում մեկ խրթխրթան սենդվիչի մեջ, հետո հավաքիր քոնը։",demoTitle:"Սենդվիչի անատոմիա",demoCaption:"Քանդվում է։ Հավաքվում է։ Միշտ Crusty։",gameTitle:"Հավաքիր քո Crusty-ն",gameHint:"Սեղմիր բաղադրիչների վրա և ստեղծիր քո տարբերակը։",gameReset:"Սկսել նորից",gameFinish:"Պատրաստ է!",aboutKicker:"ՄԵՐ ՄԱՍԻՆ",aboutTitle:"Պատրաստվում է հենց քո աչքի առաջ",aboutText:"Crusty Sandwiches & More-ը Երևանի սրտում ստեղծված արագ ու թարմ սննդի կոնցեպտ է։ Յուրաքանչյուր պատվերը պատրաստում ենք տեղում։",address:"Մաշտոցի պողոտա 5, Երևան 0002",map:"Բացել քարտեզը ↗"},
+  ru:{nav:["Главная","Меню","О нас","Контакты"],kicker:"СВЕЖО • ГОРЯЧО • CRUSTY",title:"Твой сэндвич.<br>Твои правила.",intro:"Свежие ингредиенты, золотистый хрустящий хлеб и вкусы, за которыми хочется возвращаться.",menuButton:"Смотреть меню",hours:"Каждый день: 10:00–22:00",orderTitle:"Выберите способ заказа",orderText:"Смотрите всё меню здесь, а заказ оформляйте на удобной платформе.",menuKicker:"ПОЛНОЕ МЕНЮ",menuTitle:"Всё меню — прямо здесь.",menuIntro:"Все сэндвичи, комбо, закуски, салаты, соусы и напитки по разделам.",builderKicker:"CRUSTY LAB",promoTitle:"Собери свой Crusty",promoText:"Выбирай ингредиенты, повышай уровень вкуса и создай свой фирменный сэндвич.",promoButton:"Играй и собирай",scoreLabel:"СЧЁТ",flavorLabel:"УРОВЕНЬ ВКУСА",gameRandom:"Удиви меня",rushTitle:"CRUSTY RUSH",rushHint:"Запомни заказ и собери ингредиенты в правильном порядке.",orderLabel:"ЗАКАЗ",timerLabel:"ВРЕМЯ",livesLabel:"ЖИЗНИ",rushStart:"НАЧАТЬ ИГРУ",builderTitle:"Создай свой сэндвич",builderIntro:"Посмотри, как свежие ингредиенты превращаются в один хрустящий сэндвич, а потом собери свой.",demoTitle:"Анатомия сэндвича",demoCaption:"Разбирается. Собирается. Всегда Crusty.",gameTitle:"Собери свой Crusty",gameHint:"Нажимай на ингредиенты и создавай свой вариант.",gameReset:"Начать заново",gameFinish:"Готово!",aboutKicker:"О НАС",aboutTitle:"Готовим прямо на твоих глазах",aboutText:"Crusty Sandwiches & More — концепция быстрой и свежей еды в центре Еревана. Каждый заказ готовим на месте.",address:"проспект Месропа Маштоца, 5, Ереван 0002",map:"Открыть карту ↗"},
+  en:{nav:["Home","Menu","About","Contact"],kicker:"FRESH • TOASTY • CRUSTY",title:"Your sandwich.<br>Your rules.",intro:"Fresh ingredients, golden crusty bread and flavors worth coming back for.",menuButton:"Explore menu",hours:"Open daily: 10:00–22:00",orderTitle:"Choose how to order",orderText:"Browse the full menu here, then order on the platform you prefer.",menuKicker:"FULL MENU",menuTitle:"The whole menu. Right here.",menuIntro:"Every sandwich, combo, bite, salad, sauce and drink, organized by category.",builderKicker:"CRUSTY LAB",promoTitle:"Build your Crusty",promoText:"Choose ingredients, level up the flavor and create your signature sandwich.",promoButton:"Play and build",scoreLabel:"SCORE",flavorLabel:"FLAVOR LEVEL",gameRandom:"Surprise me",rushTitle:"CRUSTY RUSH",rushHint:"Remember the order and stack every ingredient in the right sequence.",orderLabel:"ORDER",timerLabel:"TIME",livesLabel:"LIVES",rushStart:"START GAME",builderTitle:"Build your sandwich",builderIntro:"Watch fresh ingredients become one golden, crusty sandwich — then create your own.",demoTitle:"Sandwich anatomy",demoCaption:"Breaks apart. Comes together. Always Crusty.",gameTitle:"Build your Crusty",gameHint:"Tap ingredients and create your own combination.",gameReset:"Start over",gameFinish:"Done!",aboutKicker:"OUR STORY",aboutTitle:"Made fresh, right in front of you",aboutText:"Crusty Sandwiches & More is a fast, fresh food concept in central Yerevan. Every order is made on the spot.",address:"5 Mesrop Mashtots Ave, Yerevan 0002",map:"Get directions ↗"}
 };
 let lang = localStorage.getItem("crusty-lang") || "hy";
 let products = PRODUCTS;
@@ -1088,46 +1088,56 @@ const BUILDER_INGREDIENTS=[
   {id:"onion",names:{hy:"Սոխ",ru:"Лук",en:"Onion"}},
   {id:"sauce",names:{hy:"Սոուս",ru:"Соус",en:"Sauce"}}
 ];
-const BUILDER_COPY={
-  hy:{empty:"Ընտրիր բաղադրիչները",count:n=>"Բաղադրիչներ՝ "+n,ready:"Քո Crusty-ն պատրաստ է!",max:"Սենդվիչը լիքն է!"},
-  ru:{empty:"Выбери ингредиенты",count:n=>"Ингредиентов: "+n,ready:"Твой Crusty готов!",max:"Сэндвич уже полный!"},
-  en:{empty:"Choose ingredients",count:n=>"Ingredients: "+n,ready:"Your Crusty is ready!",max:"Your sandwich is full!"}
+const RUSH_COPY={
+  hy:{idle:"Սեղմիր «Սկսել խաղը»",go:"Հավաքիր առաջին բաղադրիչը!",right:"Ճիշտ է! Շարունակի՛ր",wrong:"Սխալ բաղադրիչ։ Փորձիր նորից",win:"Պատվերը պատրաստ է։ Դու Crusty Master ես!",lose:"Խաղն ավարտվեց։ Փորձիր նորից"},
+  ru:{idle:"Нажми «Начать игру»",go:"Собери первый ингредиент!",right:"Правильно! Продолжай",wrong:"Не тот ингредиент — попробуй ещё",win:"Заказ готов! Ты Crusty Master!",lose:"Игра окончена — попробуй ещё раз"},
+  en:{idle:"Press Start Game",go:"Stack the first ingredient!",right:"Correct! Keep going",wrong:"Wrong ingredient — try again",win:"Order ready! You are a Crusty Master!",lose:"Game over — try again"}
 };
-let builderLayers=[],builderFinished=false,builderMessage="";
+let builderLayers=[],rushRecipe=[],rushIndex=0,rushScore=0,rushLives=3,rushTime=30,rushActive=false,rushWon=false,rushClock;
+function ingredientById(id){return BUILDER_INGREDIENTS.find(item=>item.id===id)}
+function makeRushRecipe(){return [...BUILDER_INGREDIENTS].sort(()=>Math.random()-.5).slice(0,5+Math.floor(Math.random()*2)).map(item=>item.id)}
 function renderBuilderLabels(){
   const tray=document.getElementById("ingredientTray");if(!tray)return;
-  tray.innerHTML=BUILDER_INGREDIENTS.map(item=>'<button type="button" class="ingredient-choice" data-build-ingredient="'+item.id+'"><span class="ingredient-swatch '+item.id+'"></span><b>'+item.names[lang]+'</b><small>+</small></button>').join("");
-  renderBuilder();
+  tray.innerHTML=BUILDER_INGREDIENTS.map(item=>'<button type="button" class="ingredient-choice" data-build-ingredient="'+item.id+'" '+(rushActive?"":"disabled")+'><span class="ingredient-swatch '+item.id+'"></span><b>'+item.names[lang]+'</b><small>+</small></button>').join("");
+  renderRush();
 }
-function renderBuilder(){
+function renderRush(){
   const stack=document.getElementById("gameStack"),status=document.getElementById("gameStatus");if(!stack||!status)return;
-  const layers=["bread-bottom",...builderLayers];if(builderFinished)layers.push("bread-top");
+  const layers=["bread-bottom",...builderLayers];if(rushWon)layers.push("bread-top");
   stack.innerHTML=layers.map((id,i)=>'<div class="stack-layer '+id+'" style="--layer-index:'+i+'"></div>').join("");
-  const copy=BUILDER_COPY[lang];
-  status.textContent=builderMessage||(builderFinished?copy.ready:(builderLayers.length?copy.count(builderLayers.length):copy.empty));
-  document.getElementById("gameFinish").disabled=builderFinished;
-  const score=builderLayers.length*125+(builderFinished?250:0),level=Math.min(5,Math.max(1,Math.ceil((builderLayers.length+(builderFinished?1:0))/2)));
-  const scoreEl=document.getElementById("gameScore"),levelEl=document.getElementById("flavorLevel"),bar=document.getElementById("flavorBar");
-  if(scoreEl)scoreEl.textContent=String(score).padStart(3,"0");if(levelEl)levelEl.textContent=level+" / 5";if(bar)bar.style.width=(level*20)+"%";
+  const order=document.getElementById("rushOrder");
+  if(order)order.innerHTML=(rushRecipe.length?rushRecipe:makeRushRecipe()).map((id,i)=>{const item=ingredientById(id);return '<span class="'+(i<rushIndex?"done":i===rushIndex&&rushActive?"current":"")+'"><i class="ingredient-swatch '+id+'"></i><b>'+item.names[lang]+'</b></span>'}).join("");
+  document.getElementById("gameScore").textContent=String(rushScore).padStart(3,"0");
+  document.getElementById("rushTimer").textContent=String(rushTime).padStart(2,"0");
+  document.getElementById("rushLives").textContent="♥ ".repeat(rushLives)+"♡ ".repeat(3-rushLives);
+  status.textContent=rushWon?RUSH_COPY[lang].win:(rushActive?(rushIndex?RUSH_COPY[lang].right:RUSH_COPY[lang].go):(rushLives<=0||rushTime<=0?RUSH_COPY[lang].lose:RUSH_COPY[lang].idle));
 }
-function addBuilderIngredient(id){
-  if(builderLayers.length>=8){builderMessage=BUILDER_COPY[lang].max;renderBuilder();return}
-  builderFinished=false;builderMessage="";builderLayers.push(id);renderBuilder();
-  const newest=document.querySelector("#gameStack .stack-layer:last-child");newest?.classList.add("just-added");
+function startRush(){
+  clearInterval(rushClock);builderLayers=[];rushRecipe=makeRushRecipe();rushIndex=0;rushScore=0;rushLives=3;rushTime=30;rushActive=true;rushWon=false;
+  renderBuilderLabels();document.querySelector(".builder-modal-panel")?.classList.remove("rush-fail");
+  rushClock=setInterval(()=>{rushTime--;renderRush();if(rushTime<=0)endRush(false)},1000);
 }
-function finishBuilder(){
-  if(!builderLayers.length){builderMessage=BUILDER_COPY[lang].empty;renderBuilder();return}
-  builderFinished=true;builderMessage="";renderBuilder();
-  const pop=document.getElementById("gamePop");pop.classList.remove("show");void pop.offsetWidth;pop.classList.add("show");
-  const panel=document.querySelector(".builder-modal-panel");panel?.classList.add("celebrate");setTimeout(()=>panel?.classList.remove("celebrate"),1000);
-  launchConfetti();
+function chooseRushIngredient(id){
+  if(!rushActive)return;
+  if(id===rushRecipe[rushIndex]){
+    builderLayers.push(id);rushIndex++;rushScore+=150+rushTime*2;renderRush();
+    document.querySelector("#gameStack .stack-layer:last-child")?.classList.add("just-added");
+    if(rushIndex>=rushRecipe.length)endRush(true);
+  }else{
+    rushLives--;rushScore=Math.max(0,rushScore-75);renderRush();
+    const panel=document.querySelector(".builder-modal-panel");panel?.classList.remove("rush-wrong");void panel?.offsetWidth;panel?.classList.add("rush-wrong");
+    document.getElementById("gameStatus").textContent=RUSH_COPY[lang].wrong;
+    if(rushLives<=0)endRush(false);
+  }
 }
-function resetBuilder(){builderLayers=[];builderFinished=false;builderMessage="";document.getElementById("gamePop")?.classList.remove("show");document.getElementById("gameConfetti")?.replaceChildren();renderBuilder()}
-function randomBuilder(){builderLayers=[];builderFinished=false;builderMessage="";const count=4+Math.floor(Math.random()*4);for(let i=0;i<count;i++)builderLayers.push(BUILDER_INGREDIENTS[Math.floor(Math.random()*BUILDER_INGREDIENTS.length)].id);renderBuilder();document.querySelector("#gameStack .stack-layer:last-child")?.classList.add("just-added")}
-function launchConfetti(){const box=document.getElementById("gameConfetti");if(!box)return;box.innerHTML=Array.from({length:28},(_,i)=>'<i style="--x:'+((i*37)%100)+'%;--d:'+((i%7)*.08)+'s;--r:'+((i*67)%360)+'deg;--c:'+(i%3)+'"></i>').join("");setTimeout(()=>box.replaceChildren(),1800)}
-function openBuilderGame(){const modal=document.getElementById("builderModal");modal.classList.add("is-open");modal.setAttribute("aria-hidden","false");document.body.classList.add("modal-open");renderBuilderLabels();setTimeout(()=>modal.querySelector(".builder-modal-close")?.focus(),120)}
-function closeBuilderGame(){const modal=document.getElementById("builderModal");modal.classList.remove("is-open");modal.setAttribute("aria-hidden","true");document.body.classList.remove("modal-open")}
-
+function endRush(won){
+  clearInterval(rushClock);rushActive=false;rushWon=won;if(won){rushScore+=rushTime*20;renderRush();launchConfetti();const pop=document.getElementById("gamePop");pop.classList.remove("show");void pop.offsetWidth;pop.classList.add("show");document.querySelector(".builder-modal-panel")?.classList.add("celebrate");setTimeout(()=>document.querySelector(".builder-modal-panel")?.classList.remove("celebrate"),1000)}else{renderRush();document.querySelector(".builder-modal-panel")?.classList.add("rush-fail")}
+  document.querySelectorAll("[data-build-ingredient]").forEach(button=>button.disabled=true);
+}
+function resetBuilder(){clearInterval(rushClock);builderLayers=[];rushRecipe=[];rushIndex=0;rushScore=0;rushLives=3;rushTime=30;rushActive=false;rushWon=false;document.getElementById("gamePop")?.classList.remove("show");document.getElementById("gameConfetti")?.replaceChildren();renderBuilderLabels()}
+function launchConfetti(){const box=document.getElementById("gameConfetti");if(!box)return;box.innerHTML=Array.from({length:38},(_,i)=>'<i style="--x:'+((i*37)%100)+'%;--d:'+((i%7)*.08)+'s;--r:'+((i*67)%360)+'deg;--c:'+(i%3)+'"></i>').join("");setTimeout(()=>box.replaceChildren(),1900)}
+function openBuilderGame(){const modal=document.getElementById("builderModal");modal.classList.add("is-open");modal.setAttribute("aria-hidden","false");document.body.classList.add("modal-open","game-open");modal.querySelector(".builder-modal-panel").scrollTop=0;resetBuilder();setTimeout(()=>modal.querySelector(".builder-modal-close")?.focus(),120)}
+function closeBuilderGame(){clearInterval(rushClock);rushActive=false;const modal=document.getElementById("builderModal");modal.classList.remove("is-open");modal.setAttribute("aria-hidden","true");document.body.classList.remove("modal-open","game-open")}
 async function loadAdminContent(){
   try{
     const response=await fetch(API,{mode:"cors"});if(!response.ok)return;
@@ -1142,10 +1152,9 @@ async function loadAdminContent(){
   }catch(_){}
 }
 document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLanguage(b.dataset.lang)));
-document.getElementById("ingredientTray")?.addEventListener("click",event=>{const button=event.target.closest("[data-build-ingredient]");if(button)addBuilderIngredient(button.dataset.buildIngredient)});
+document.getElementById("ingredientTray")?.addEventListener("click",event=>{const button=event.target.closest("[data-build-ingredient]");if(button)chooseRushIngredient(button.dataset.buildIngredient)});
 document.getElementById("gameReset")?.addEventListener("click",resetBuilder);
-document.getElementById("gameFinish")?.addEventListener("click",finishBuilder);
-document.getElementById("gameRandom")?.addEventListener("click",randomBuilder);
+document.getElementById("rushStart")?.addEventListener("click",startRush);
 document.getElementById("openBuilder")?.addEventListener("click",openBuilderGame);
 document.querySelectorAll("[data-builder-close]").forEach(button=>button.addEventListener("click",closeBuilderGame));
 
@@ -1155,6 +1164,6 @@ document.addEventListener("click",event=>{
   if(event.target.closest("[data-modal-close]"))closeCategoryModal();
 });
 document.addEventListener("keydown",event=>{if(event.key==="Escape"){closeCategoryModal();closeBuilderGame()}});
-window.addEventListener("load",()=>setTimeout(()=>{document.body.classList.add("site-ready");document.getElementById("siteLoader")?.classList.add("is-hidden")},450));
+window.addEventListener("load",()=>setTimeout(()=>{document.body.classList.add("site-ready");document.getElementById("siteLoader")?.classList.add("is-hidden")},2200));
 setLanguage(lang);loadAdminContent();setupReveals();
 
