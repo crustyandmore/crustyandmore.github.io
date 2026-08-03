@@ -1058,7 +1058,7 @@ function renderMenu(){
 function fillCategoryModal(category){
   const items=products.filter(p=>p.category===category);
   document.getElementById("modalTitle").textContent=CATEGORIES[category][lang];
-  document.getElementById("modalGrid").innerHTML=items.map(cardMarkup).join("");
+  const grid=document.getElementById("modalGrid");grid.innerHTML=items.map(cardMarkup).join("");grid.classList.toggle("single-item",items.length===1);
 }
 function openCategoryModal(category){
   const modal=document.getElementById("menuModal");
