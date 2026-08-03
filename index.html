@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Crusty And More">
   <meta property="og:url" content="https://crustyandmore.github.io/">
   <meta property="og:image" content="https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png">
-  <link rel="stylesheet" href="styles.css?v=20260804-2">
+  <link rel="stylesheet" href="styles.css?v=20260804-3">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -53,7 +53,16 @@
   </script>
 </head>
 <body>
-  <div class="site-loader" id="siteLoader" aria-hidden="true"><div class="loader-mark"><img src="https://crusty-and-more.vilensahakyan4.chatgpt.site/logo.jpg" alt=""><span></span><p>TASTY • TOASTY • CRUSTY</p></div></div>
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-scene">
+      <p>FRESH • TOASTY • CRUSTY</p>
+      <div class="loader-sandwich">
+        <i class="loader-layer bread-bottom"></i><i class="loader-layer lettuce"></i><i class="loader-layer chicken"></i><i class="loader-layer cheese"></i><i class="loader-layer tomato"></i><i class="loader-layer onion"></i><i class="loader-layer bread-top"></i>
+      </div>
+      <strong>CRUSTY <span>AND MORE</span></strong>
+      <div class="loader-progress"><i></i></div>
+    </div>
+  </div>
   <header>
     <a class="brand" href="#home"><img id="logo" src="https://crusty-and-more.vilensahakyan4.chatgpt.site/logo.jpg" alt="Crusty And More"></a>
     <nav><a href="#home" data-nav="home">Գլխավոր</a><a href="#menu" data-nav="menu">Մենյու</a><a href="#about" data-nav="about">Մեր մասին</a><a href="#contact" data-nav="contact">Կապ</a></nav>
@@ -87,10 +96,12 @@
     <button class="builder-modal-backdrop" type="button" data-builder-close aria-label="Close game"></button>
     <section class="builder-modal-panel" role="dialog" aria-modal="true" aria-labelledby="builderModalTitle">
       <button class="builder-modal-close" type="button" data-builder-close aria-label="Close">×</button>
-      <div class="builder-modal-intro"><p class="eyebrow">CRUSTY LAB</p><h2 id="builderModalTitle" data-text="gameTitle">Հավաքիր քո Crusty-ն</h2><p data-text="gameHint">Սեղմիր բաղադրիչների վրա և ստեղծիր քո տարբերակը։</p></div>
-      <div class="game-scoreboard">
-        <div><small data-text="scoreLabel">ՄԻԱՎՈՐ</small><strong id="gameScore">000</strong></div>
-        <div class="flavor-meter"><span><small data-text="flavorLabel">ՀԱՄԻ ՄԱԿԱՐԴԱԿ</small><b id="flavorLevel">1 / 5</b></span><i><em id="flavorBar"></em></i></div>
+      <div class="builder-modal-intro"><p class="eyebrow">CRUSTY LAB</p><h2 id="builderModalTitle" data-text="rushTitle">CRUSTY RUSH</h2><p data-text="rushHint">Հիշիր պատվերը և հավաքիր բաղադրիչները ճիշտ հերթականությամբ։</p></div>
+      <div class="rush-hud">
+        <div class="rush-order"><small data-text="orderLabel">ՊԱՏՎԵՐ</small><div id="rushOrder"></div></div>
+        <div class="rush-stat"><small data-text="timerLabel">ԺԱՄԱՆԱԿ</small><strong id="rushTimer">30</strong></div>
+        <div class="rush-stat"><small data-text="livesLabel">ԿՅԱՆՔԵՐ</small><strong id="rushLives">♥ ♥ ♥</strong></div>
+        <div class="rush-stat"><small data-text="scoreLabel">ՄԻԱՎՈՐ</small><strong id="gameScore">000</strong></div>
       </div>
       <div class="builder-game-layout">
         <div class="game-worktop">
@@ -98,7 +109,7 @@
           <div class="game-pop" id="gamePop" aria-hidden="true">CRUSTY!</div>
           <div class="game-confetti" id="gameConfetti" aria-hidden="true"></div>
         </div>
-        <div class="game-controls"><div class="ingredient-tray" id="ingredientTray"></div><strong id="gameStatus"></strong><div class="game-actions"><button class="game-random" id="gameRandom" type="button" data-text="gameRandom">Անակնկալ ինձ</button><button class="game-reset" id="gameReset" type="button" data-text="gameReset">Սկսել նորից</button><button class="game-finish" id="gameFinish" type="button" data-text="gameFinish">Պատրաստ է!</button></div></div>
+        <div class="game-controls"><div class="ingredient-tray" id="ingredientTray"></div><strong id="gameStatus"></strong><div class="game-actions rush-actions"><button class="game-reset" id="gameReset" type="button" data-text="gameReset">Նորից</button><button class="rush-start" id="rushStart" type="button" data-text="rushStart">ՍԿՍԵԼ ԽԱՂԸ</button></div></div>
       </div>
     </section>
   </div>
@@ -109,6 +120,6 @@
       <div class="menu-modal-grid" id="modalGrid"></div>
     </section>
   </div>
-  <script src="app.js?v=20260804-2"></script>
+  <script src="app.js?v=20260804-3"></script>
 </body>
 </html>
