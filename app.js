@@ -1020,9 +1020,9 @@ const CATEGORIES = {
   Sauce:{hy:"Սոուսներ",ru:"Соусы",en:"Sauces"},Drinks:{hy:"Ըմպելիքներ",ru:"Напитки",en:"Drinks"}
 };
 const WORDS = {
-  hy:{nav:["Գլխավոր","Մենյու","Մեր մասին","Կապ"],kicker:"ԹԱՐՄ • ՏԱՔ • CRUSTY",title:"Քո սենդվիչը։<br>Քո կանոններով։",intro:"Թարմ բաղադրիչներ, ոսկեգույն խրթխրթան հաց և համեր, որոնց համար ուզում ես վերադառնալ։",menuButton:"Դիտել մենյուն",hours:"Ամեն օր՝ 10:00–22:00",orderTitle:"Ընտրիր առաքման եղանակը",orderText:"Մենյուն դիտիր այստեղ, իսկ պատվերը կատարիր քեզ հարմար հարթակում։",menuKicker:"ԱՄԲՈՂՋ ՄԵՆՅՈՒՆ",menuTitle:"Ամեն ինչ՝ մեկ տեղում։",menuIntro:"Բոլոր սենդվիչները, կոմբոները, խորտիկները, աղցանները, սոուսները և ըմպելիքները։",aboutKicker:"ՄԵՐ ՄԱՍԻՆ",aboutTitle:"Պատրաստվում է հենց քո աչքի առաջ",aboutText:"Crusty Sandwiches & More-ը Երևանի սրտում ստեղծված արագ ու թարմ սննդի կոնցեպտ է։ Յուրաքանչյուր պատվերը պատրաստում ենք տեղում։",address:"Մաշտոցի պողոտա 5, Երևան 0002",map:"Բացել քարտեզը ↗"},
-  ru:{nav:["Главная","Меню","О нас","Контакты"],kicker:"СВЕЖО • ГОРЯЧО • CRUSTY",title:"Твой сэндвич.<br>Твои правила.",intro:"Свежие ингредиенты, золотистый хрустящий хлеб и вкусы, за которыми хочется возвращаться.",menuButton:"Смотреть меню",hours:"Каждый день: 10:00–22:00",orderTitle:"Выберите способ заказа",orderText:"Смотрите всё меню здесь, а заказ оформляйте на удобной платформе.",menuKicker:"ПОЛНОЕ МЕНЮ",menuTitle:"Всё меню — прямо здесь.",menuIntro:"Все сэндвичи, комбо, закуски, салаты, соусы и напитки по разделам.",aboutKicker:"О НАС",aboutTitle:"Готовим прямо на твоих глазах",aboutText:"Crusty Sandwiches & More — концепция быстрой и свежей еды в центре Еревана. Каждый заказ готовим на месте.",address:"проспект Месропа Маштоца, 5, Ереван 0002",map:"Открыть карту ↗"},
-  en:{nav:["Home","Menu","About","Contact"],kicker:"FRESH • TOASTY • CRUSTY",title:"Your sandwich.<br>Your rules.",intro:"Fresh ingredients, golden crusty bread and flavors worth coming back for.",menuButton:"Explore menu",hours:"Open daily: 10:00–22:00",orderTitle:"Choose how to order",orderText:"Browse the full menu here, then order on the platform you prefer.",menuKicker:"FULL MENU",menuTitle:"The whole menu. Right here.",menuIntro:"Every sandwich, combo, bite, salad, sauce and drink, organized by category.",aboutKicker:"OUR STORY",aboutTitle:"Made fresh, right in front of you",aboutText:"Crusty Sandwiches & More is a fast, fresh food concept in central Yerevan. Every order is made on the spot.",address:"5 Mesrop Mashtots Ave, Yerevan 0002",map:"Get directions ↗"}
+  hy:{nav:["Գլխավոր","Մենյու","Մեր մասին","Կապ"],kicker:"ԹԱՐՄ • ՏԱՔ • CRUSTY",title:"Քո սենդվիչը։<br>Քո կանոններով։",intro:"Թարմ բաղադրիչներ, ոսկեգույն խրթխրթան հաց և համեր, որոնց համար ուզում ես վերադառնալ։",menuButton:"Դիտել մենյուն",hours:"Ամեն օր՝ 10:00–22:00",orderTitle:"Ընտրիր առաքման եղանակը",orderText:"Մենյուն դիտիր այստեղ, իսկ պատվերը կատարիր քեզ հարմար հարթակում։",menuKicker:"ԱՄԲՈՂՋ ՄԵՆՅՈՒՆ",menuTitle:"Ամեն ինչ՝ մեկ տեղում։",menuIntro:"Բոլոր սենդվիչները, կոմբոները, խորտիկները, աղցանները, սոուսները և ըմպելիքները։",builderKicker:"CRUSTY LAB",builderTitle:"Ստեղծիր քո սենդվիչը",builderIntro:"Տես՝ ինչպես են թարմ բաղադրիչները միավորվում մեկ խրթխրթան սենդվիչի մեջ, հետո հավաքիր քոնը։",demoTitle:"Սենդվիչի անատոմիա",demoCaption:"Քանդվում է։ Հավաքվում է։ Միշտ Crusty։",gameTitle:"Հավաքիր քո Crusty-ն",gameHint:"Սեղմիր բաղադրիչների վրա և ստեղծիր քո տարբերակը։",gameReset:"Սկսել նորից",gameFinish:"Պատրաստ է!",aboutKicker:"ՄԵՐ ՄԱՍԻՆ",aboutTitle:"Պատրաստվում է հենց քո աչքի առաջ",aboutText:"Crusty Sandwiches & More-ը Երևանի սրտում ստեղծված արագ ու թարմ սննդի կոնցեպտ է։ Յուրաքանչյուր պատվերը պատրաստում ենք տեղում։",address:"Մաշտոցի պողոտա 5, Երևան 0002",map:"Բացել քարտեզը ↗"},
+  ru:{nav:["Главная","Меню","О нас","Контакты"],kicker:"СВЕЖО • ГОРЯЧО • CRUSTY",title:"Твой сэндвич.<br>Твои правила.",intro:"Свежие ингредиенты, золотистый хрустящий хлеб и вкусы, за которыми хочется возвращаться.",menuButton:"Смотреть меню",hours:"Каждый день: 10:00–22:00",orderTitle:"Выберите способ заказа",orderText:"Смотрите всё меню здесь, а заказ оформляйте на удобной платформе.",menuKicker:"ПОЛНОЕ МЕНЮ",menuTitle:"Всё меню — прямо здесь.",menuIntro:"Все сэндвичи, комбо, закуски, салаты, соусы и напитки по разделам.",builderKicker:"CRUSTY LAB",builderTitle:"Создай свой сэндвич",builderIntro:"Посмотри, как свежие ингредиенты превращаются в один хрустящий сэндвич, а потом собери свой.",demoTitle:"Анатомия сэндвича",demoCaption:"Разбирается. Собирается. Всегда Crusty.",gameTitle:"Собери свой Crusty",gameHint:"Нажимай на ингредиенты и создавай свой вариант.",gameReset:"Начать заново",gameFinish:"Готово!",aboutKicker:"О НАС",aboutTitle:"Готовим прямо на твоих глазах",aboutText:"Crusty Sandwiches & More — концепция быстрой и свежей еды в центре Еревана. Каждый заказ готовим на месте.",address:"проспект Месропа Маштоца, 5, Ереван 0002",map:"Открыть карту ↗"},
+  en:{nav:["Home","Menu","About","Contact"],kicker:"FRESH • TOASTY • CRUSTY",title:"Your sandwich.<br>Your rules.",intro:"Fresh ingredients, golden crusty bread and flavors worth coming back for.",menuButton:"Explore menu",hours:"Open daily: 10:00–22:00",orderTitle:"Choose how to order",orderText:"Browse the full menu here, then order on the platform you prefer.",menuKicker:"FULL MENU",menuTitle:"The whole menu. Right here.",menuIntro:"Every sandwich, combo, bite, salad, sauce and drink, organized by category.",builderKicker:"CRUSTY LAB",builderTitle:"Build your sandwich",builderIntro:"Watch fresh ingredients become one golden, crusty sandwich — then create your own.",demoTitle:"Sandwich anatomy",demoCaption:"Breaks apart. Comes together. Always Crusty.",gameTitle:"Build your Crusty",gameHint:"Tap ingredients and create your own combination.",gameReset:"Start over",gameFinish:"Done!",aboutKicker:"OUR STORY",aboutTitle:"Made fresh, right in front of you",aboutText:"Crusty Sandwiches & More is a fast, fresh food concept in central Yerevan. Every order is made on the spot.",address:"5 Mesrop Mashtots Ave, Yerevan 0002",map:"Get directions ↗"}
 };
 let lang = localStorage.getItem("crusty-lang") || "hy";
 let products = PRODUCTS;
@@ -1037,6 +1037,7 @@ function setLanguage(next){
   document.querySelectorAll("[data-text]").forEach(el=>{const key=el.dataset.text;if(w[key])el.innerHTML=w[key]});
   document.querySelectorAll("[data-nav]").forEach((el,i)=>el.textContent=w.nav[i]);
   renderMenu();
+  renderBuilderLabels();
 }
 function cardMarkup(p){
   const name=p.names[lang]||p.names.en;
@@ -1077,6 +1078,47 @@ function setupReveals(){
   if(!revealObserver)revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");revealObserver.unobserve(entry.target)}}),{threshold:.08,rootMargin:"0px 0px -30px"});
   document.querySelectorAll(".reveal:not(.is-visible)").forEach(el=>revealObserver.observe(el));
 }
+const BUILDER_INGREDIENTS=[
+  {id:"lettuce",names:{hy:"Հազար",ru:"Салат",en:"Lettuce"}},
+  {id:"tomato",names:{hy:"Լոլիկ",ru:"Помидор",en:"Tomato"}},
+  {id:"cheese",names:{hy:"Պանիր",ru:"Сыр",en:"Cheese"}},
+  {id:"chicken",names:{hy:"Հավ",ru:"Курица",en:"Chicken"}},
+  {id:"beef",names:{hy:"Տավար",ru:"Говядина",en:"Beef"}},
+  {id:"bacon",names:{hy:"Բեկոն",ru:"Бекон",en:"Bacon"}},
+  {id:"onion",names:{hy:"Սոխ",ru:"Лук",en:"Onion"}},
+  {id:"sauce",names:{hy:"Սոուս",ru:"Соус",en:"Sauce"}}
+];
+const BUILDER_COPY={
+  hy:{empty:"Ընտրիր բաղադրիչները",count:n=>"Բաղադրիչներ՝ "+n,ready:"Քո Crusty-ն պատրաստ է!",max:"Սենդվիչը լիքն է!"},
+  ru:{empty:"Выбери ингредиенты",count:n=>"Ингредиентов: "+n,ready:"Твой Crusty готов!",max:"Сэндвич уже полный!"},
+  en:{empty:"Choose ingredients",count:n=>"Ingredients: "+n,ready:"Your Crusty is ready!",max:"Your sandwich is full!"}
+};
+let builderLayers=[],builderFinished=false,builderMessage="";
+function renderBuilderLabels(){
+  const tray=document.getElementById("ingredientTray");if(!tray)return;
+  tray.innerHTML=BUILDER_INGREDIENTS.map(item=>'<button type="button" class="ingredient-choice" data-build-ingredient="'+item.id+'"><span class="ingredient-swatch '+item.id+'"></span><b>'+item.names[lang]+'</b><small>+</small></button>').join("");
+  renderBuilder();
+}
+function renderBuilder(){
+  const stack=document.getElementById("gameStack"),status=document.getElementById("gameStatus");if(!stack||!status)return;
+  const layers=["bread-bottom",...builderLayers];if(builderFinished)layers.push("bread-top");
+  stack.innerHTML=layers.map((id,i)=>'<div class="stack-layer '+id+'" style="--layer-index:'+i+'"></div>').join("");
+  const copy=BUILDER_COPY[lang];
+  status.textContent=builderMessage||(builderFinished?copy.ready:(builderLayers.length?copy.count(builderLayers.length):copy.empty));
+  document.getElementById("gameFinish").disabled=builderFinished;
+}
+function addBuilderIngredient(id){
+  if(builderLayers.length>=8){builderMessage=BUILDER_COPY[lang].max;renderBuilder();return}
+  builderFinished=false;builderMessage="";builderLayers.push(id);renderBuilder();
+  const newest=document.querySelector("#gameStack .stack-layer:last-child");newest?.classList.add("just-added");
+}
+function finishBuilder(){
+  if(!builderLayers.length){builderMessage=BUILDER_COPY[lang].empty;renderBuilder();return}
+  builderFinished=true;builderMessage="";renderBuilder();
+  const pop=document.getElementById("gamePop");pop.classList.remove("show");void pop.offsetWidth;pop.classList.add("show");
+  document.querySelector(".builder-card")?.classList.add("celebrate");setTimeout(()=>document.querySelector(".builder-card")?.classList.remove("celebrate"),900);
+}
+function resetBuilder(){builderLayers=[];builderFinished=false;builderMessage="";document.getElementById("gamePop")?.classList.remove("show");renderBuilder()}
 async function loadAdminContent(){
   try{
     const response=await fetch(API,{mode:"cors"});if(!response.ok)return;
@@ -1091,6 +1133,10 @@ async function loadAdminContent(){
   }catch(_){}
 }
 document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLanguage(b.dataset.lang)));
+document.getElementById("ingredientTray")?.addEventListener("click",event=>{const button=event.target.closest("[data-build-ingredient]");if(button)addBuilderIngredient(button.dataset.buildIngredient)});
+document.getElementById("gameReset")?.addEventListener("click",resetBuilder);
+document.getElementById("gameFinish")?.addEventListener("click",finishBuilder);
+
 document.addEventListener("click",event=>{
   const opener=event.target.closest("[data-open-category]");
   if(opener){event.preventDefault();openCategoryModal(opener.dataset.openCategory);return}
