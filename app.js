@@ -1205,3 +1205,21 @@ let menuResizeTimer;window.addEventListener("resize",()=>{clearTimeout(menuResiz
 window.addEventListener("load",()=>setTimeout(()=>{document.body.classList.add("site-ready");document.getElementById("siteLoader")?.classList.add("is-hidden")},1400));
 setLanguage(lang);loadAdminContent();setupReveals();
 
+
+const mobileHeader=document.getElementById("siteHeader");
+const mobileToggle=document.getElementById("mobileMenuToggle");
+function closeMobileMenu(){
+  mobileHeader?.classList.remove("menu-open");
+  document.body.classList.remove("mobile-menu-open");
+  mobileToggle?.setAttribute("aria-expanded","false");
+}
+function toggleMobileMenu(){
+  const open=!mobileHeader?.classList.contains("menu-open");
+  mobileHeader?.classList.toggle("menu-open",open);
+  document.body.classList.toggle("mobile-menu-open",open);
+  mobileToggle?.setAttribute("aria-expanded",String(open));
+}
+mobileToggle?.addEventListener("click",toggleMobileMenu);
+document.getElementById("mobileNavBackdrop")?.addEventListener("click",closeMobileMenu);
+document.querySelectorAll("#mainNav a,#mainNav [data-open-game]").forEach(item=>item.addEventListener("click",closeMobileMenu));
+window.addEventListener("resize",()=>{if(window.innerWidth>760)closeMobileMenu()});
