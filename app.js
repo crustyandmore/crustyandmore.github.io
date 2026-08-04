@@ -1146,10 +1146,45 @@ async function loadAdminContent(){
     const data=await response.json(),c=data.content||{};
     if(c.theme){document.documentElement.style.setProperty("--g",c.theme.green||"#287841");document.documentElement.style.setProperty("--y",c.theme.yellow||"#ffc900");document.documentElement.style.setProperty("--cream",c.theme.cream||"#f7f2e7")}
     if(c.logo)document.querySelectorAll('img[src*="logo.jpg"],#logo').forEach(img=>img.src=asset(c.logo));
-    if(c.heroImage&&document.getElementById("heroImage"))document.getElementById("heroImage").src=asset(c.heroImage);
+    if(c.heroImage){
+      const heroUrl=asset(c.heroImage),hero=document.getElementById("heroImage");
+      if(hero)hero.src=heroUrl;
+      document.querySelectorAll(".hero-slice").forEach(layer=>layer.style.backgroundImage='url("'+heroUrl+'")');
+    }
     if(Array.isArray(c.products)&&c.products.length>=20){
-      products=c.products.map((p,i)=>{const base=PRODUCTS.find(x=>x.id===p.id||x.names.en===p.name)||PRODUCTS[i];return {...base,image:p.image||base.image,price:Number(String(p.price).replace(/[^0-9]/g,""))||base.price,category:ORDER.includes(p.tag)?p.tag:base.category,names:{...base.names,en:p.name||base.names.en}}});
+      products=c.products.map((p,i)=>{
+        const base=PRODUCTS.find(x=>x.id===p.id||x.names.en===p.name)||PRODUCTS[i];
+        const names=p.names||{},descriptions=p.descriptions||{};
+        return {...base,
+          image:p.image||base.image,
+          price:Number(String(p.price).replace(/[^0-9]/g,""))||base.price,
+          category:ORDER.includes(p.tag)?p.tag:base.category,
+          names:{
+            hy:names.hy||p.nameHy||base.names.hy,
+            ru:names.ru||p.nameRu||base.names.ru,
+            en:names.en||p.name||p.nameEn||base.names.en
+          },
+          descriptions:{
+            hy:descriptions.hy||p.descriptionHy||p.ingredientsHy||base.descriptions.hy,
+            ru:descriptions.ru||p.descriptionRu||p.ingredientsRu||base.descriptions.ru,
+            en:descriptions.en||p.description||p.descriptionEn||p.ingredients||p.ingredientsEn||base.descriptions.en
+          }
+        };
+      });
       renderMenu();
+    }
+    const vacancy=c.vacancy||c.job||c.jobs;
+    const jobsCard=document.getElementById("jobsCard");
+    if(jobsCard){
+      const enabled=Boolean(vacancy&&(vacancy.enabled===true||vacancy.active===true||vacancy.published===true));
+      jobsCard.hidden=!enabled;
+      if(enabled){
+        const title=vacancy.title||vacancy.name,theText=vacancy.text||vacancy.description;
+        if(title)document.getElementById("jobsAdminTitle").textContent=typeof title==="object"?(title[lang]||title.ru||title.en||title.hy):title;
+        if(theText)document.getElementById("jobsAdminText").textContent=typeof theText==="object"?(theText[lang]||theText.ru||theText.en||theText.hy):theText;
+        const phone=String(vacancy.phone||"033206006").replace(/[^+0-9]/g,"");
+        document.getElementById("jobsAdminLink").href="tel:"+phone;
+      }
     }
   }catch(_){}
 }
