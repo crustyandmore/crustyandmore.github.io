@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Crusty And More">
   <meta property="og:url" content="https://crustyandmore.github.io/">
   <meta property="og:image" content="https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png">
-  <link rel="stylesheet" href="styles.css?v=20260804-premium3">
+  <link rel="stylesheet" href="styles.css?v=20260804-premium4">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -74,6 +74,15 @@
       </div>
       <div class="hero-media">
         <img id="heroImage" src="https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png" alt="Crusty sandwich">
+        <div class="hero-slices" aria-hidden="true">
+          <i class="hero-slice" style="--top:0%;--bottom:85%;--dx:-7%;--dy:-12%;--rot:-1.5deg;--delay:0s"></i>
+          <i class="hero-slice" style="--top:15%;--bottom:70%;--dx:8%;--dy:-8%;--rot:1.2deg;--delay:.03s"></i>
+          <i class="hero-slice" style="--top:30%;--bottom:55%;--dx:-5%;--dy:-3%;--rot:-.8deg;--delay:.06s"></i>
+          <i class="hero-slice" style="--top:45%;--bottom:40%;--dx:7%;--dy:3%;--rot:1deg;--delay:.09s"></i>
+          <i class="hero-slice" style="--top:60%;--bottom:25%;--dx:-6%;--dy:7%;--rot:-1.2deg;--delay:.12s"></i>
+          <i class="hero-slice" style="--top:75%;--bottom:10%;--dx:5%;--dy:11%;--rot:.8deg;--delay:.15s"></i>
+          <i class="hero-slice" style="--top:90%;--bottom:0%;--dx:-4%;--dy:14%;--rot:-.6deg;--delay:.18s"></i>
+        </div>
         <div class="hero-shade"></div><span class="hero-stamp">TASTY<br>TOASTY<br>CRUSTY</span>
         <button class="hero-game-card" type="button" data-open-game>
           <span class="mini-sandwich"><i class="bread-top"></i><i class="tomato"></i><i class="cheese"></i><i class="chicken"></i><i class="lettuce"></i><i class="bread-bottom"></i></span>
@@ -99,14 +108,9 @@
       <div class="story-copy"><p class="eyebrow" data-text="aboutKicker">ՄԵՐ ՄԱՍԻՆ</p><h2 data-text="aboutTitle">Պատրաստվում է հենց քո աչքի առաջ</h2><p data-text="aboutText">Crusty Sandwiches & More-ը Երևանի սրտում ստեղծված արագ ու թարմ սննդի կոնցեպտ է։ Յուրաքանչյուր պատվերը պատրաստում ենք տեղում։</p><div class="story-points"><div><b>01</b><span data-text="pointFresh">Թարմ բաղադրիչներ ամեն օր</span></div><div><b>02</b><span data-text="pointMade">Պատրաստվում է պատվերից հետո</span></div><div><b>03</b><span data-text="pointChoice">Քո ընտրությունը՝ քո կանոններով</span></div></div></div>
     </section>
 
-    <section class="game-promo section-shell" id="game">
-      <div class="game-promo-copy"><p class="eyebrow">CRUSTY RUSH</p><h2 data-text="gamePromoTitle">Հավաքիր։ Հասցրու։ Հաղթիր։</h2><p data-text="gamePromoText">30 վայրկյանում հավաքիր ճիշտ պատվերը, պահպանիր երեք կյանքը և դարձիր Crusty Master։</p><button class="button game-button" type="button" data-open-game><span>▶</span><b data-text="heroGameButton">ԽԱՂԱԼ ՀԻՄԱ</b></button></div>
-      <div class="game-promo-art" aria-hidden="true"><div class="game-rings"></div><span class="promo-sandwich"><i class="bread-top"></i><i class="onion"></i><i class="tomato"></i><i class="cheese"></i><i class="chicken"></i><i class="lettuce"></i><i class="bread-bottom"></i></span><strong>+1000</strong></div>
-    </section>
-
     <section class="community section-shell">
       <article class="promo-card"><p class="eyebrow" data-text="promoKicker">ԱԿՑԻԱՆԵՐ</p><h3 data-text="promoCardTitle">Հետևիր հատուկ առաջարկներին</h3><p data-text="promoCardText">Նոր կոմբոներ, սեզոնային համեր և հատուկ առաջարկներ՝ մեր սոցիալական էջերում։</p><a href="https://www.instagram.com/crustyandmore/" target="_blank" rel="noopener">Instagram ↗</a></article>
-      <article class="jobs-card"><p class="eyebrow" data-text="jobsKicker">ԱՇԽԱՏԱՆՔ</p><h3 data-text="jobsTitle">Միացիր Crusty թիմին</h3><p data-text="jobsText">Սիրո՞ւմ ես արագ աշխատանք, լավ սնունդ և ուժեղ թիմ։ Կապվիր մեզ հետ։</p><a href="tel:+37433206006" data-text="callUs">Զանգահարել ↗</a></article>
+      <article class="jobs-card" id="jobsCard" hidden><p class="eyebrow" data-text="jobsKicker">ԱՇԽԱՏԱՆՔ</p><h3 id="jobsAdminTitle"></h3><p id="jobsAdminText"></p><a id="jobsAdminLink" href="tel:+37433206006" data-text="callUs">Զանգահարել ↗</a></article>
     </section>
 
     <section class="contact section-shell" id="contact"><div><p class="eyebrow">PROSPECT FOOD COURT</p><h2>Crusty And More</h2><p data-text="address">Մաշտոցի պողոտա 5, Երևան 0002</p><p data-text="hours">Ամեն օր՝ 10:00–22:00</p><a href="tel:+37433206006">☎ 033 206006</a></div><a class="map" href="https://www.google.com/maps/search/?api=1&query=5+Mesrop+Mashtots+Ave+Yerevan" target="_blank" rel="noopener" data-text="map">Բացել քարտեզը ↗</a></section>
@@ -118,6 +122,6 @@
 
   <div class="menu-modal" id="menuModal" aria-hidden="true"><button class="menu-modal-backdrop" type="button" data-modal-close aria-label="Close menu"></button><section class="menu-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="menu-modal-head"><div><p class="eyebrow">CRUSTY MENU</p><h2 id="modalTitle"></h2></div><button class="menu-modal-close" type="button" data-modal-close aria-label="Close">×</button></div><div class="menu-modal-grid" id="modalGrid"></div></section></div>
 
-  <script src="app.js?v=20260804-premium3"></script>
+  <script src="app.js?v=20260804-premium4"></script>
 </body>
 </html>
