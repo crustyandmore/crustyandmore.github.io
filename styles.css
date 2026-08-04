@@ -18,3 +18,27 @@ footer{padding:42px max(24px,6vw);display:grid;grid-template-columns:1fr auto au
 @media(max-width:760px){.section-shell{padding:54px 18px}.site-header{height:68px;padding:0 13px;grid-template-columns:1fr auto}.brand img{width:120px;height:52px}.site-header nav{display:none}.header-actions{gap:6px}.hero{padding-top:68px}.hero-copy{padding:42px 19px 35px}.hero h1{font-size:clamp(40px,12vw,56px)}.hero-intro{font-size:15px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.button{padding:0 12px;font-size:9px}.hero-meta{margin-top:28px}.hero-meta strong{font-size:11px}.hero-meta span{font-size:8px}.hero-media{min-height:390px}.hero-stamp{width:72px;height:72px;font-size:9px}.hero-game-card{left:11px;right:11px;bottom:10px;grid-template-columns:68px 1fr 38px;padding:8px}.hero-game-card strong{font-size:20px}.hero-game-card>b{width:36px;height:36px}.mini-sandwich{transform:scale(.8)}.brand-marquee span{font-size:17px}.order-links{grid-template-columns:1fr}.order-links a{min-height:92px}.section-title{grid-template-columns:1fr;gap:10px}.section-heading h2,.section-title h2,.story h2,.game-promo h2,.contact h2{font-size:clamp(35px,10vw,48px)}.category-nav{top:67px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{height:245px}.card-image{height:104px;min-height:104px}.card-body{padding:9px}.card h4{font-size:12px}.card p{font-size:8px;-webkit-line-clamp:2}.card strong{font-size:14px}.category-heading h3{font-size:23px}.category-open b{font-size:7px}.story{gap:28px}.story-media{height:310px}.game-promo-art{height:280px}.promo-sandwich{transform:scale(.66)}.community{grid-template-columns:1fr}.community article{min-height:270px;padding:27px}.contact{grid-template-columns:1fr;align-items:start}.contact .map{width:max-content}footer{grid-template-columns:1fr;gap:23px}.social-links{gap:12px}.menu-modal,.builder-modal{align-items:end}.menu-modal-panel,.builder-modal-panel{width:100%;max-height:94dvh;border-radius:22px 22px 0 0}.menu-modal-grid{grid-template-columns:1fr}.menu-modal-grid .card{height:140px;display:grid;grid-template-columns:105px 1fr}.menu-modal-grid .card-image{height:140px}.menu-modal-grid.single-item .card{height:auto;display:flex;flex-direction:column}.menu-modal-grid.single-item .card-image{height:190px}.menu-modal-grid.single-item .card-body{padding:15px}.builder-modal-panel{height:100dvh;max-height:100dvh;border-radius:0;padding:15px}.builder-modal-intro{padding:5px 38px 10px}.builder-modal-intro h2{font-size:35px}.rush-hud{grid-template-columns:1fr 1fr 1fr}.rush-order{grid-column:1/-1}.rush-order #rushOrder{justify-content:center}.rush-order b{display:none}.builder-game-layout{grid-template-columns:1fr;gap:7px}.game-worktop{height:250px}.game-stack{height:190px}.game-controls{padding:10px}.ingredient-tray{grid-template-columns:repeat(4,1fr);gap:4px}.ingredient-choice{display:flex;flex-direction:column;text-align:center;padding:6px 2px}.ingredient-choice b{font-size:8px;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ingredient-choice small{display:none}.game-controls>#gameStatus{min-height:30px}.loader-sandwich{transform:scale(.8);height:165px}.loader-scene>strong{font-size:32px}}
 @media(max-width:390px){.languages button{min-width:30px;padding:6px 4px}.hero-actions{grid-template-columns:1fr}.hero-meta{grid-template-columns:1fr 1fr}.menu-grid{grid-template-columns:1fr 1fr}.category-open b{display:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+/* Hero photo: the real sandwich disassembles and rebuilds in place */
+.hero-media>img{opacity:0}
+.hero-slices{position:absolute;inset:0;z-index:0;overflow:hidden;background:#08261b}
+.hero-slice{position:absolute;inset:0;background-image:url("https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png");background-size:cover;background-position:center;will-change:transform,filter;animation:heroPhotoBuild 8s cubic-bezier(.72,0,.22,1) infinite;animation-delay:var(--delay,0s);clip-path:inset(var(--top) 0 var(--bottom) 0)}
+.hero-slice:nth-child(odd){transform-origin:left center}.hero-slice:nth-child(even){transform-origin:right center}
+@keyframes heroPhotoBuild{
+  0%,18%,82%,100%{transform:translate3d(0,0,0) rotate(0);filter:saturate(1) brightness(1)}
+  35%,58%{transform:translate3d(var(--dx),var(--dy),0) rotate(var(--rot));filter:saturate(1.08) brightness(1.08)}
+}
+.hero-media:hover .hero-slice{animation-duration:5.8s}
+.hero-shade,.hero-stamp,.hero-game-card{z-index:2}
+.jobs-card[hidden]{display:none!important}
+.community:has(.jobs-card[hidden]){grid-template-columns:1fr}
+.community:has(.jobs-card[hidden]) .promo-card{max-width:none}
+@media(max-width:760px){
+  .hero-slice{animation-duration:7s}
+  @keyframes heroPhotoBuild{
+    0%,20%,82%,100%{transform:translate3d(0,0,0) rotate(0)}
+    38%,58%{transform:translate3d(calc(var(--dx)*.45),calc(var(--dy)*.45),0) rotate(var(--rot))}
+  }
+}
+@media(prefers-reduced-motion:reduce){.hero-slice{animation:none}}
