@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Crusty And More">
   <meta property="og:url" content="https://crustyandmore.github.io/">
   <meta property="og:image" content="https://crusty-and-more.vilensahakyan4.chatgpt.site/hero-sandwich.png">
-  <link rel="stylesheet" href="styles.css?v=20260804-premium4">
+  <link rel="stylesheet" href="styles.css?v=20260804-mobile5">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -57,10 +57,11 @@
     <div class="loader-scene"><p>TASTY • TOASTY • CRUSTY</p><div class="loader-sandwich"><i class="loader-layer bread-bottom"></i><i class="loader-layer lettuce"></i><i class="loader-layer chicken"></i><i class="loader-layer cheese"></i><i class="loader-layer tomato"></i><i class="loader-layer onion"></i><i class="loader-layer bread-top"></i></div><strong>CRUSTY <span>AND MORE</span></strong><div class="loader-progress"><i></i></div></div>
   </div>
 
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <a class="brand" href="#home" aria-label="Crusty And More"><img id="logo" src="https://crusty-and-more.vilensahakyan4.chatgpt.site/logo.jpg" alt="Crusty And More"></a>
-    <nav><a href="#home" data-nav="home">Գլխավոր</a><a href="#menu" data-nav="menu">Մենյու</a><button type="button" data-open-game data-nav="game">Խաղ</button><a href="#about" data-nav="about">Մեր մասին</a><a href="#contact" data-nav="contact">Կապ</a></nav>
-    <div class="header-actions"><a class="header-phone" href="tel:+37433206006">033 206006</a><div class="languages"><button data-lang="hy" class="active">ՀԱՅ</button><button data-lang="ru">RU</button><button data-lang="en">EN</button></div></div>
+    <nav id="mainNav"><a href="#home" data-nav="home">Գլխավոր</a><a href="#menu" data-nav="menu">Մենյու</a><button type="button" data-open-game data-nav="game">Խաղ</button><a href="#about" data-nav="about">Մեր մասին</a><a href="#contact" data-nav="contact">Կապ</a><a class="mobile-nav-phone" href="tel:+37433206006">☎ 033 206006</a></nav>
+    <div class="header-actions"><a class="header-phone" href="tel:+37433206006">033 206006</a><div class="languages"><button data-lang="hy" class="active">ՀԱՅ</button><button data-lang="ru">RU</button><button data-lang="en">EN</button></div><button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><i></i><i></i><i></i></button></div>
+    <button class="mobile-nav-backdrop" id="mobileNavBackdrop" type="button" aria-label="Close menu"></button>
   </header>
 
   <main>
@@ -122,6 +123,6 @@
 
   <div class="menu-modal" id="menuModal" aria-hidden="true"><button class="menu-modal-backdrop" type="button" data-modal-close aria-label="Close menu"></button><section class="menu-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="menu-modal-head"><div><p class="eyebrow">CRUSTY MENU</p><h2 id="modalTitle"></h2></div><button class="menu-modal-close" type="button" data-modal-close aria-label="Close">×</button></div><div class="menu-modal-grid" id="modalGrid"></div></section></div>
 
-  <script src="app.js?v=20260804-premium4"></script>
+  <script src="app.js?v=20260804-mobile5"></script>
 </body>
 </html>
